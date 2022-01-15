@@ -1,0 +1,9 @@
+repeat wait(7) until game:IsLoaded()
+if game.PlaceId == 5094651510 then
+while wait() do
+   getrenv()._G.Remotes.Async:FireServer("Character","TeleportButton");
+   getrenv()._G.Remotes.Async:FireServer("DemonHistory1", "Finish");
+   getrenv()._G.Remotes.Async:FireServer("Character","TeleportButton");
+   Game:GetService("TeleportService"):Teleport(4855457388, game:GetService("Players").LocalPlayer)
+end
+end
